@@ -22,6 +22,7 @@ You have at your disposal a set of integer values, 2 stacks, and a set of instru
 
 ### Push_swap_gui
 
+Click [here](https://github.com/elijahkash/push_swap_gui) to access the push_swap_gui repository .
 ![alt text](./Images/gui.png)
 
 ### 📋 Moves allowed 
