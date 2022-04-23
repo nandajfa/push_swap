@@ -20,6 +20,10 @@ You have at your disposal a set of integer values, 2 stacks, and a set of instru
 * Imperative programming
 * Algorithms & AI
 
+### Push_swap_gui
+
+![alt text](./images/push_swap.mp4)
+
 ### 📋 Moves allowed 
 
 - `sa` : swap the first 2 elements at the top of stack a (do nothing if there is only one or no elements).
