@@ -2,7 +2,7 @@
 	42cursus' push_swap
  </h1>
  
- [![NPM](https://img.shields.io/npm/l/react)](https://github.com/nandajfa/so_long/blob/main/LICENSE)
+ [![NPM](https://img.shields.io/npm/l/react)](https://github.com/nandajfa/push_swap/blob/main/LICENSE)
  
    ## 🗣️ About
 
@@ -65,10 +65,10 @@ make fclean
 
 ### Performance
 
-* With 3 numbers: 2 instructions
-* With 5 numbers: 7-10 instructions
-* With 100 numbers: 1084 instructions
-* With 500 numbers: 6784 instructions
+* With 3 numbers: 
+* With 5 numbers: 
+* With 100 numbers: 
+* With 500 numbers: 
 
  #### Autor
 
