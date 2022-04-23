@@ -22,7 +22,7 @@ You have at your disposal a set of integer values, 2 stacks, and a set of instru
 
 ### Push_swap_gui
 
-![alt text](./images/push_swap.mp4)
+![alt text](./Images/gui.png)
 
 ### 📋 Moves allowed 
 
