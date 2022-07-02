@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:55:52 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/14 16:15:30 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/06/30 15:31:04 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,13 @@ int	check_args(int argc, char **argv)
 {
 	int	*array_nb;
 
-
 	array_nb = malloc(sizeof(int) * (argc - 1));
 	if (array_nb == NULL)
 		exit(EXIT_FAILURE);
 	convert_args(argc, argv, array_nb);
 	is_int(argv);
 	duplicate(argc, array_nb);
-	check_int( argc, argv);
+	check_int(argc, argv);
 	is_sorted(argc, array_nb);
 	free(array_nb);
 	return (0);

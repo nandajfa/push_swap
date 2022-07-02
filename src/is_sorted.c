@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 16:29:23 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/14 16:36:44 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/06/30 15:56:31 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,13 +21,9 @@ int	is_sorted(int argc, int *array_nb)
 	while (i < (argc - 1))
 	{
 		next = i + 1;
-		while (next < (argc - 1))
-		{
-			if (array_nb[next] < array_nb[i])
-				return (1);
-			next++;
-		}
+		if (array_nb[next] < array_nb[i])
+			return (0);
 		i++;
 	}
-	return (0);
+	return (1);
 }

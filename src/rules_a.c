@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 23:19:42 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/14 20:47:30 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/06/29 16:37:53 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +14,7 @@
 
 void	swap_a(t_stack *stacks)
 {
-	int temp;
+	int	temp;
 
 	temp = stacks->stack_a[0];
 	stacks->stack_a[0] = stacks->stack_a[1];
@@ -41,7 +40,7 @@ void	rotate_a(t_stack *stacks)
 
 void	reverse_rotate_a(t_stack *stacks)
 {
-	int temp;
+	int	temp;
 	int	i;
 
 	temp = stacks->stack_a[stacks->size_a - 1];
@@ -57,7 +56,7 @@ void	reverse_rotate_a(t_stack *stacks)
 
 void	push_a(t_stack *stacks)
 {
-	int i;
+	int	i;
 
 	if (stacks->size_b == 0)
 		return ;

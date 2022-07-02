@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 20:44:42 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/24 22:50:56 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/06/30 15:30:09 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ typedef struct s_stack
 	int	*stack_a;
 	int	*stack_b;
 	int	size_a;
-	int size_b;
+	int	size_b;
 }	t_stack;
 
 int		check_args(int argc, char **argv);
@@ -43,5 +43,13 @@ void	rr(t_stack *stacks);
 void	rrr(t_stack *stacks);
 void	push_a(t_stack *stacks);
 void	push_b(t_stack *stacks);
+void	three_args(t_stack *stacks);
+void	four_args(t_stack *stacks);
+void	five_args(t_stack *stacks);
+long	smallest_nb(t_stack *stacks);
+int		index_nb(t_stack *stacks);
+void	positive(t_stack *stacks);
+void	radix(t_stack *stacks);
+int	ckeck_sort(t_stack *stacks);
 
 #endif

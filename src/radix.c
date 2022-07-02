@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   small_sort.c                                       :+:      :+:    :+:   */
+/*   radix.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/24 22:34:30 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/27 14:30:03 by jefernan         ###   ########.fr       */
+/*   Created: 2022/06/29 16:26:58 by jefernan          #+#    #+#             */
+/*   Updated: 2022/07/02 22:04:37 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	three_args(t_stack *stacks)
+void	radix(t_stack *stacks)
 {
-	if (stacks->stack_a[2] > stacks->stack_a[1])
-		swap_a(stacks);
-	if (stacks->stack_a[0] < stacks->stack_a[1])
+	int i;
+	int j;
+
+	i = 0;
+	while (i < stacks->size_a)
 	{
-		reverse_rotate_a(stacks);
-		if (stacks->stack_a[1] < stacks->stack_a[2])
-			swap_a(stacks);
+		j = 0;
+		while (j < stacks->size_a )
+		{
+			if ((stacks->stack_a[0] >> i) & 1)
+				rotate_a(stacks);
+			else
+				push_b(stacks);
+			j++;
+		}
+		while (stacks->size_b > 0)
+			push_a(stacks);
+		i++;
 	}
 }
-
-
-
-

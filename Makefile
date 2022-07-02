@@ -6,7 +6,7 @@
 #    By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/07 20:44:42 by jefernan          #+#    #+#              #
-#    Updated: 2022/06/24 22:52:31 by jefernan         ###   ########.fr        #
+#    Updated: 2022/06/30 14:29:22 by jefernan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS_DIR  = ./src
 OBJ_DIR = ./objs
 
 SRCS = 	main.c check_args.c is_sorted.c rules_a.c rules_b.c \
-		rules_both.c samll_sort.c 
+		rules_both.c sort.c find.c radix.c
 		
 SOURCES			=	$(addprefix $(SRCS_DIR)/, $(SRCS))
 

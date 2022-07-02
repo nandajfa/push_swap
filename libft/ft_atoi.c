@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 08:29:07 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/10 22:08:20 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/06/29 16:36:34 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 long int	ft_atoi(const char *str)
 {
-	int	i;
+	int			i;
 	long int	num;
-	int	neg;
+	int			neg;
 
 	i = 0;
 	num = 0;
