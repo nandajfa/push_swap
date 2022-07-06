@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 16:26:58 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/02 22:04:37 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/02 22:59:14 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	radix(t_stack *stacks)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (i < stacks->size_a)
+	while (!is_sorted(stacks))
 	{
 		j = 0;
-		while (j < stacks->size_a )
+		while (j < stacks->size_a + stacks->size_b)
 		{
 			if ((stacks->stack_a[0] >> i) & 1)
 				rotate_a(stacks);

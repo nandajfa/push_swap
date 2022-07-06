@@ -6,22 +6,20 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 16:29:23 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/30 15:56:31 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/02 22:50:11 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	is_sorted(int argc, int *array_nb)
+int	is_sorted(t_stack *stacks)
 {
 	int	i;
-	int	next;
 
-	i = 1;
-	while (i < (argc - 1))
+	i = 0;
+	while (i < (stacks->size_a - 1))
 	{
-		next = i + 1;
-		if (array_nb[next] < array_nb[i])
+		if (stacks->stack_a[i] > stacks->stack_a[i + 1])
 			return (0);
 		i++;
 	}

@@ -6,12 +6,11 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 16:11:06 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/02 22:00:37 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/05 15:49:32 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
@@ -21,13 +20,10 @@ int	main(int argc, char **argv)
 		return (0);
 	check_args(argc, argv);
 	init_stack(&stacks, argc, argv);
-	printf("%i\n", stacks.size_a);
-	if (stacks.size_a == 2)
+	if (stacks.size_a == 2 && !is_sorted(&stacks))
 		swap_a(&stacks);
 	else if (stacks.size_a == 3)
 		three_args(&stacks);
-	else if (stacks.size_a == 4)
-		four_args(&stacks);
 	else if (stacks.size_a == 5)
 		five_args(&stacks);
 	else if (stacks.size_a > 5)

@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:55:52 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/30 15:31:04 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/02 22:57:23 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int	check_args(int argc, char **argv)
 	is_int(argv);
 	duplicate(argc, array_nb);
 	check_int(argc, argv);
-	is_sorted(argc, array_nb);
 	free(array_nb);
 	return (0);
 }
