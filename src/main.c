@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 16:11:06 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/05 15:49:32 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/06 13:16:51 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	init_stack(&stacks, argc, argv);
 	if (stacks.size_a == 2 && !is_sorted(&stacks))
 		swap_a(&stacks);
-	else if (stacks.size_a == 3)
+	else if (stacks.size_a == 3 && !is_sorted(&stacks))
 		three_args(&stacks);
 	else if (stacks.size_a == 5)
 		five_args(&stacks);
