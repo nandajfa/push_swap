@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 23:19:42 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/29 16:37:53 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/10 17:14:27 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,8 @@ void	push_a(t_stack *stacks)
 	if (stacks->size_b == 0)
 		return ;
 	if (stacks->size_a == 0)
-		stacks->stack_b[0] = stacks->stack_a[0];
+		stacks->stack_a[0] = stacks->stack_b[0];
+		
 	else
 	{
 		i = stacks->size_a;

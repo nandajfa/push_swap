@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:55:52 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/10 03:34:53 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/10 12:51:55 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int	is_int(char **argv)
 		{
 			if (!(argv[i][j] >= '0' && argv[i][j] <= '9') && argv[i][j] != '-')
 			{
-				write(2, "Error\n", 7);
+				write(2, "Error\n", 6);
 				exit (1);
 			}
 			j++;
@@ -76,7 +76,7 @@ int	duplicate(int argc, int *array_nb)
 		{
 			if (array_nb[i] == array_nb[j])
 			{
-				write(2, "Error\n", 7);
+				write(2, "Error\n", 6);
 				free(array_nb);
 				exit (1);
 			}
@@ -98,7 +98,7 @@ void	check_int( int argc, char **argv)
 		number = ft_atoi(argv[i]);
 		if (number > 2147483647 || number < -2147483648)
 		{
-			write(2, "Error\n", 7);
+			write(2, "Error\n", 6);
 			exit (1);
 		}
 		i++;

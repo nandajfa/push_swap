@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/14 20:44:34 by jefernan          #+#    #+#             */
-/*   Updated: 2022/06/29 16:31:09 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/10 20:33:32 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	swap_b(t_stack *stacks)
 	temp = stacks->stack_b[0];
 	stacks->stack_b[0] = stacks->stack_b[1];
 	stacks->stack_b[1] = temp;
-	write(1, "sa\n", 3);
+	write(1, "sb\n", 3);
 }
 
 void	rotate_b(t_stack *stacks)
@@ -35,7 +35,7 @@ void	rotate_b(t_stack *stacks)
 		i++;
 	}
 	stacks->stack_b[stacks->size_b - 1] = temp;
-	write(1, "ra\n", 3);
+	write(1, "rb\n", 3);
 }
 
 void	reverse_rotate_b(t_stack *stacks)
@@ -51,7 +51,7 @@ void	reverse_rotate_b(t_stack *stacks)
 		i--;
 	}
 	stacks->stack_b[0] = temp;
-	write(1, "rra\n", 4);
+	write(1, "rrb\n", 4);
 }
 
 void	push_b(t_stack *stacks)
