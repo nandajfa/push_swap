@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:55:02 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/08 21:34:47 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/09 00:17:56 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	positive(t_stack *stacks)
 		while (i < stacks->size_a)
 		{
 			stacks->stack_a[i] = stacks->stack_a[i] + small_nb;
-			i++;		
+			i++;
 		}
 	}
 }
-	
+
 long	find_small(t_stack *stacks)
 {
 	int		i;

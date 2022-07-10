@@ -69,10 +69,10 @@ make fclean
 
 ### Performance
 
-* With 3 numbers: 
-* With 5 numbers: 
-* With 100 numbers: 
-* With 500 numbers: 
+* With 3 numbers: 2 instructions
+* With 5 numbers: 6 instructions
+* With 100 numbers: 1084
+* With 500 numbers: 6784
 
  #### Autor
 
