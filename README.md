@@ -55,9 +55,6 @@ make
 # Running push_swap
 ./push_swap 1 3 2 5 4
 
-# Running checker
-./checker 1 3 2 5 4
-
 # Running push_swap with the checker
 ARG="1 3 2 5 4"; ./push_swap $ARG | ./checker $ARG
 
