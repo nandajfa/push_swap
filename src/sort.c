@@ -6,7 +6,7 @@
 /*   By: jefernan <jefernan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/24 22:34:30 by jefernan          #+#    #+#             */
-/*   Updated: 2022/07/05 23:16:31 by jefernan         ###   ########.fr       */
+/*   Updated: 2022/07/20 22:25:30 by jefernan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,35 @@ void	five_args(t_stack *stacks)
 			i--;
 		}
 	}
+}
+
+void	smallest_nb(t_stack *stacks)
+{
+	int	i;
+
+	i = index_nb(stacks);
+	while (i != 0)
+	{
+		if (i <= 2)
+			rotate_a(stacks);
+		else
+			reverse_rotate_a(stacks);
+		i = index_nb(stacks);
+	}
+}
+
+int	index_nb(t_stack *stacks)
+{
+	int	i;
+	int	nb_index;
+
+	i = 0;
+	nb_index = i;
+	while (i < stacks->size_a)
+	{
+		if (stacks->stack_a[nb_index] > stacks->stack_a[i])
+			nb_index = i;
+		i++;
+	}
+	return (nb_index);
 }
