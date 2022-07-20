@@ -55,9 +55,6 @@ make
 # Running push_swap
 ./push_swap 1 3 2 5 4
 
-# Running checker
-./checker 1 3 2 5 4
-
 # Running push_swap with the checker
 ARG="1 3 2 5 4"; ./push_swap $ARG | ./checker $ARG
 
@@ -74,6 +71,6 @@ make fclean
 * With 100 numbers: 1084
 * With 500 numbers: 6784
 
- #### Autor
+ #### Author
 
 Made by jessica Fernanda 👋 [See my linkedin](https://www.linkedin.com/in/jessica-fernanda-alves-marques-106651205/)
