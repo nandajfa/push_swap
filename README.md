@@ -1,8 +1,12 @@
 <h1 align="center">
-	42cursus' push_swap
+	<img alt="badge push" src="./push_swap_dark.svg" />
  </h1>
  
+ <div align="center">
+ 
  [![NPM](https://img.shields.io/npm/l/react)](https://github.com/nandajfa/push_swap/blob/main/LICENSE)
+ 
+  </div>
  
    ## 🗣️ About
 
@@ -71,6 +75,10 @@ make fclean
 * With 100 numbers: 1084
 * With 500 numbers: 6784
 
- #### Author
+### Author
 
-Made by jessica Fernanda 👋 [See my linkedin](https://www.linkedin.com/in/jessica-fernanda-106651205)
+ | [<img src="https://avatars.githubusercontent.com/u/80687429?v=4" width=115><br><sub>Jessica Fernanda</sub>](https://github.com/nandajfa) |
+ | :---: |
+ 
+ [![Linkedin Badge](https://img.shields.io/badge/-Jessica-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jessica-fernanda-106651205)](https://www.linkedin.com/in/jessica-fernanda-106651205) 
+[![Gmail Badge](https://img.shields.io/badge/-nanda.jfa@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nanda.jfa@gmail.com)](mailto:nanda.jfa@gmail.com)
